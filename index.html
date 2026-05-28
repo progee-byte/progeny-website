@@ -1,135 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Progeny_ | Streamer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {text-decoration: underline ; font-kerning: none}
+    span.s2 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s3 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
+    span.s4 {font-kerning: none}
+    span.s5 {font: 12.0px 'Times New Roman'; text-decoration: underline ; font-kerning: none}
+  </style>
 </head>
 <body>
-
-  <!-- Star field canvas -->
-  <canvas id="stars"></canvas>
-
-  <!-- Navigation -->
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">PROGENY_</a>
-    <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="clips.html">Clips</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="about.html">About</a>
-    </div>
-    <a href="https://twitch.tv/Progeny_" target="_blank" class="nav-cta">
-      <span class="live-dot" id="liveDot"></span>
-      <span id="liveLabel">Twitch</span>
-    </a>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <p class="hero-eyebrow">Welcome to the stream</p>
-      <h1 class="hero-title">PROGENY_</h1>
-      <p class="hero-sub">Streamer. Gamer. Content Creator.<br/>Live Thu – Sun · 9PM–12AM ET</p>
-      <div class="hero-actions">
-        <a href="https://twitch.tv/Progeny_" target="_blank" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
-          Watch Live
-        </a>
-        <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-          Join Discord
-        </a>
-      </div>
-    </div>
-    <div class="hero-orb"></div>
-  </section>
-
-  <!-- Live banner (shown when live) -->
-  <div class="live-banner" id="liveBanner" style="display:none">
-    <span class="live-pulse"></span>
-    <strong>LIVE NOW</strong> — Watch Progeny_ stream on Twitch
-    <a href="https://twitch.tv/Progeny_" target="_blank">Watch →</a>
-  </div>
-
-  <!-- Socials -->
-  <section class="socials-strip">
-    <a href="https://twitch.tv/Progeny_" target="_blank" class="social-card" style="--accent:#9B59B6">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
-      <div>
-        <p class="social-name">Twitch</p>
-        <p class="social-handle">@Progeny_</p>
-      </div>
-      <span class="social-arrow">→</span>
-    </a>
-    <a href="https://discord.gg/YOURINVITE" target="_blank" class="social-card" style="--accent:#5865F2">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-      <div>
-        <p class="social-name">Discord</p>
-        <p class="social-handle">Join the community</p>
-      </div>
-      <span class="social-arrow">→</span>
-    </a>
-    <a href="https://youtube.com/@YOURCHANNEL" target="_blank" class="social-card" style="--accent:#FF0000">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-      <div>
-        <p class="social-name">YouTube</p>
-        <p class="social-handle">@YOURCHANNEL</p>
-      </div>
-      <span class="social-arrow">→</span>
-    </a>
-    <a href="https://bsky.app/profile/YOURHANDLE.bsky.social" target="_blank" class="social-card" style="--accent:#0085FF">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>
-      <div>
-        <p class="social-name">Bluesky</p>
-        <p class="social-handle">@YOURHANDLE</p>
-      </div>
-      <span class="social-arrow">→</span>
-    </a>
-  </section>
-
-  <!-- Schedule Preview -->
-  <section class="section">
-    <div class="section-header">
-      <h2>Stream Schedule</h2>
-      <a href="schedule.html" class="section-link">Full schedule →</a>
-    </div>
-    <div class="schedule-mini">
-      <div class="schedule-day active-day">
-        <span class="day-name">Thursday</span>
-        <span class="day-time">9PM – 12AM ET</span>
-      </div>
-      <div class="schedule-day active-day">
-        <span class="day-name">Friday</span>
-        <span class="day-time">9PM – 12AM ET</span>
-      </div>
-      <div class="schedule-day off-day">
-        <span class="day-name">Saturday</span>
-        <span class="day-time">9PM – 12AM ET</span>
-      </div>
-      <div class="schedule-day active-day">
-        <span class="day-name">Sunday</span>
-        <span class="day-time">9PM – 12AM ET</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p class="footer-logo">PROGENY_</p>
-    <p class="footer-copy">© 2025 Progeny_. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="https://twitch.tv/Progeny_" target="_blank">Twitch</a>
-      <a href="https://discord.gg/YOURINVITE" target="_blank">Discord</a>
-      <a href="https://youtube.com/@YOURCHANNEL" target="_blank">YouTube</a>
-      <a href="https://bsky.app/profile/YOURHANDLE.bsky.social" target="_blank">Bluesky</a>
-    </div>
-  </footer>
-
-  <script src="js/stars.js"></script>
-  <script src="js/live.js"></script>
+<p class="p1"><span class="s1"><a href="file:///Users/progeny/Desktop/progeny-website/index.html">PROGENY_</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///Users/progeny/Desktop/progeny-website/index.html">Home</a></span><span class="s2"> <a href="file:///Users/progeny/Desktop/progeny-website/clips.html"><span class="s3">Clips</span></a> <a href="file:///Users/progeny/Desktop/progeny-website/schedule.html"><span class="s3">Schedule</span></a> <a href="file:///Users/progeny/Desktop/progeny-website/about.html"><span class="s3">About</span></a></span></p>
+<p class="p1"><span class="s1"><a href="https://twitch.tv/Progeny_">Twitch</a></span></p>
+<p class="p2"><span class="s4">Welcome to the stream</span></p>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s4"><b>PROGENY_</b></span></h1>
+<p class="p2"><span class="s4">Streamer. Gamer. Content Creator.<br>
+Live Thu – Sun · 9PM–12AM ET</span></p>
+<p class="p1"><span class="s1"><a href="https://twitch.tv/Progeny_">Watch Live </a><a href="https://discord.gg/YOURINVITE">Join Discord</a></span></p>
+<p class="p4"><span class="s4"></span><br></p>
+<p class="p5"><span class="s1"><a href="https://twitch.tv/Progeny_">Twitch</a></span></p>
+<p class="p5"><span class="s1"><a href="https://twitch.tv/Progeny_">@Progeny_</a></span></p>
+<p class="p6"><span class="s1"><a href="https://twitch.tv/Progeny_">→<span class="s5"></span></a></span></p>
+<p class="p5"><span class="s1"><a href="https://discord.gg/N8dN3S">Discord</a></span></p>
+<p class="p5"><span class="s1"><a href="https://discord.gg/YOURINVITE">Join the community</a></span></p>
+<p class="p6"><span class="s1"><a href="https://discord.gg/YOURINVITE">→<span class="s5"></span></a></span></p>
+<p class="p5"><span class="s1"><a href="https://youtube.com/@Progeny_">YouTube</a></span></p>
+<p class="p5"><span class="s1"><a href="https://youtube.com/@YOURCHANNEL">@</a>Progeny_</span></p>
+<p class="p6"><span class="s1"><a href="https://youtube.com/@YOURCHANNEL">→<span class="s5"></span></a></span></p>
+<p class="p5"><span class="s1"><a href="https://bsky.app/profile/progenyttv.bsky.social">Bluesky</a></span></p>
+<p class="p5"><span class="s1"><a href="https://bsky.app/profile/YOURHANDLE.bsky.social">@</a>progenyttv.bsky.social</span></p>
+<p class="p6"><span class="s1"><a href="https://bsky.app/profile/YOURHANDLE.bsky.social">→<span class="s5"></span></a></span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s4"><b>Stream Schedule</b></span></h2>
+<p class="p1"><span class="s1"><a href="file:///Users/progeny/Desktop/progeny-website/schedule.html">Full schedule <span class="s5">→</span></a></span></p>
+<p class="p8"><span class="s4">Thursday 9PM – 12AM ET</span></p>
+<p class="p8"><span class="s4">Friday 9PM – 12AM ET</span></p>
+<p class="p8"><span class="s4">Saturday 9PM – 12AM ET</span></p>
+<p class="p8"><span class="s4">Sunday 9PM – 12AM ET</span></p>
+<p class="p2"><span class="s4">PROGENY_</span></p>
+<p class="p2"><span class="s4">© 2025 Progeny_. All rights reserved.</span></p>
+<p class="p1"><span class="s1"><a href="https://twitch.tv/Progeny_">Twitch</a></span><span class="s2"> <a href="https://discord.gg/N8dNC3S"><span class="s3">Discord</span></a> <a href="https://youtube.com/@Progeny_"><span class="s3">YouTube</span></a> <a href="https://bsky.app/profile/progenyttv.bsky.social"><span class="s3">Bluesky</span></a></span></p>
 </body>
 </html>
