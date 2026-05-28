@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedule | Progeny_</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <canvas id="stars"></canvas>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">PROGENY_</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="clips.html">Clips</a>
+      <a href="schedule.html" class="active">Schedule</a>
+      <a href="about.html">About</a>
+    </div>
+    <a href="https://twitch.tv/Progeny_" target="_blank" class="nav-cta">
+      <span class="live-dot" id="liveDot"></span>
+      <span id="liveLabel">Twitch</span>
+    </a>
+  </nav>
+
+  <div class="page-hero">
+    <h1>Stream Schedule</h1>
+    <p>All times Eastern (ET) · Subject to change</p>
+  </div>
+
+  <div class="schedule-table-wrap">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="off-day">
+          <td>Monday</td>
+          <td>—</td>
+          <td><span class="day-badge badge-off">Off</span></td>
+        </tr>
+        <tr class="off-day">
+          <td>Tuesday</td>
+          <td>—</td>
+          <td><span class="day-badge badge-off">Off</span></td>
+        </tr>
+        <tr class="off-day">
+          <td>Wednesday</td>
+          <td>—</td>
+          <td><span class="day-badge badge-off">Off</span></td>
+        </tr>
+        <tr class="stream-day">
+          <td>Thursday</td>
+          <td>9:00 PM – 12:00 AM ET</td>
+          <td><span class="day-badge badge-live">Live</span></td>
+        </tr>
+        <tr class="stream-day">
+          <td>Friday</td>
+          <td>9:00 PM – 12:00 AM ET</td>
+          <td><span class="day-badge badge-live">Live</span></td>
+        </tr>
+        <tr class="stream-day">
+          <td>Saturday</td>
+          <td>9:00 PM – 12:00 AM ET</td>
+          <td><span class="day-badge badge-live">Live</span></td>
+        </tr>
+        <tr class="stream-day">
+          <td>Sunday</td>
+          <td>9:00 PM – 12:00 AM ET</td>
+          <td><span class="day-badge badge-live">Live</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="schedule-note">
+      Follow on <a href="https://twitch.tv/Progeny_" target="_blank" style="color: var(--gold);">Twitch</a> or join the
+      <a href="https://discord.gg/YOURINVITE" target="_blank" style="color: var(--gold);">Discord</a> to get notified when streams start.
+    </p>
+  </div>
+
+  <script src="js/stars.js"></script>
+  <script src="js/live.js"></script>
+
+  <footer class="footer">
+    <p class="footer-logo">PROGENY_</p>
+    <p class="footer-copy">© 2025 Progeny_. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://twitch.tv/Progeny_" target="_blank">Twitch</a>
+      <a href="https://discord.gg/YOURINVITE" target="_blank">Discord</a>
+      <a href="https://youtube.com/@YOURCHANNEL" target="_blank">YouTube</a>
+      <a href="https://bsky.app/profile/YOURHANDLE.bsky.social" target="_blank">Bluesky</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clips | Progeny_</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <canvas id="stars"></canvas>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">PROGENY_</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="clips.html" class="active">Clips</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="about.html">About</a>
+    </div>
+    <a href="https://twitch.tv/Progeny_" target="_blank" class="nav-cta">
+      <span class="live-dot" id="liveDot"></span>
+      <span id="liveLabel">Twitch</span>
+    </a>
+  </nav>
+
+  <div class="page-hero">
+    <h1>Clips</h1>
+    <p>The best moments from stream</p>
+  </div>
+
+  <div class="clips-grid" id="clipsGrid">
+    <div class="clips-loading">
+      <p>Loading clips...</p>
+    </div>
+  </div>
+
+  <script src="js/stars.js"></script>
+  <script src="js/live.js"></script>
+  <script>
+    // Replace with your actual Twitch Client ID and channel
+    const CLIENT_ID = 'YOUR_TWITCH_CLIENT_ID';
+    const CHANNEL   = 'Progeny_';
+
+    // Fetch clips using a CORS proxy or your own serverless function
+    // For now we display placeholder cards that link to Twitch clips page
+    async function loadClips() {
+      const grid = document.getElementById('clipsGrid');
+
+      // Placeholder clips — replace with real API call once you have a backend
+      const placeholders = [
+        { title: 'Clip 1', url: `https://twitch.tv/${CHANNEL}/clips`, thumb: '' },
+        { title: 'Clip 2', url: `https://twitch.tv/${CHANNEL}/clips`, thumb: '' },
+        { title: 'Clip 3', url: `https://twitch.tv/${CHANNEL}/clips`, thumb: '' },
+        { title: 'Clip 4', url: `https://twitch.tv/${CHANNEL}/clips`, thumb: '' },
+        { title: 'Clip 5', url: `https://twitch.tv/${CHANNEL}/clips`, thumb: '' },
+        { title: 'Clip 6', url: `https://twitch.tv/${CHANNEL}/clips`, thumb: '' },
+      ];
+
+      grid.innerHTML = placeholders.map(clip => `
+        <a href="${clip.url}" target="_blank" class="clip-card">
+          <div class="clip-thumb">
+            ${clip.thumb ? `<img src="${clip.thumb}" alt="${clip.title}" loading="lazy"/>` : ''}
+            <div class="clip-play">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="clip-info">
+            <p class="clip-title">${clip.title}</p>
+            <p class="clip-meta">twitch.tv/Progeny_</p>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    loadClips();
+  </script>
+
+  <footer class="footer">
+    <p class="footer-logo">PROGENY_</p>
+    <p class="footer-copy">© 2025 Progeny_. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://twitch.tv/Progeny_" target="_blank">Twitch</a>
+      <a href="https://discord.gg/YOURINVITE" target="_blank">Discord</a>
+      <a href="https://youtube.com/@YOURCHANNEL" target="_blank">YouTube</a>
+      <a href="https://bsky.app/profile/YOURHANDLE.bsky.social" target="_blank">Bluesky</a>
+    </div>
+  </footer>
+
+</body>
+</html>
